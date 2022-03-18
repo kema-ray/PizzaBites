@@ -10,6 +10,8 @@ body {
     letter-spacing: 0.1rem;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px, 0;
+    /* background-image: url(https://thumbs.dreamstime.com/b/pizza-seamless-pattern-vector-pizza-pattern-abstract-background-background-useful-restaurant-identity-packaging-89205691.jpg); */
+    /* display: flex; */
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
@@ -19,3 +21,14 @@ body {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: pink;
 }
+/* .color-pink {
+    color: #ff004d;
+}
+.btn-theme {
+    background-color: #ff004d;
+    padding: 5px 20px;
+    color: #fff;
+}
+.pt-5 {
+    background-image: url(https://thumbs.dreamstime.com/b/pizza-seamless-pattern-vector-pizza-pattern-abstract-background-background-useful-restaurant-identity-packaging-89205691.jpg);
+} */
