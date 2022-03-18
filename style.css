@@ -1,1 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px, 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding-left: 20px;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: pink;
+}
