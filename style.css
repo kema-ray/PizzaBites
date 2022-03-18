@@ -21,7 +21,7 @@ body {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: pink;
 }
-/* .color-pink {
+.color-pink {
     color: #ff004d;
 }
 .btn-theme {
@@ -30,5 +30,10 @@ body {
     color: #fff;
 }
 .pt-5 {
-    background-image: url(https://thumbs.dreamstime.com/b/pizza-seamless-pattern-vector-pizza-pattern-abstract-background-background-useful-restaurant-identity-packaging-89205691.jpg);
-} */
+    background-image: url(https://us.123rf.com/450wm/milkos/milkos1808/milkos180801303/107130436-slices-of-pizza-with-prosciutto-and-spices-on-black-background-copy-space-top-view.jpg?ver=6);
+    height: 70vh;
+    
+}
+.intro p {
+    color: white;
+}
