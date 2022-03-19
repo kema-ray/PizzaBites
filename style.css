@@ -29,11 +29,21 @@ body {
     padding: 5px 20px;
     color: #fff;
 }
+.image {
+    height: 8vh;
+    width: 8vw;
+}
+/* #home {
+    padding-top: 10%;
+} */
 .pt-5 {
     background-image: url(https://us.123rf.com/450wm/milkos/milkos1808/milkos180801303/107130436-slices-of-pizza-with-prosciutto-and-spices-on-black-background-copy-space-top-view.jpg?ver=6);
     height: 70vh;
-    
+    /* padding-top: 10%; */
 }
-.intro p {
+.my-auto{
+    color: #fff;
+}
+.intro h1,h5,p {
     color: white;
 }
