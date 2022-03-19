@@ -39,6 +39,7 @@ body {
 .pt-5 {
     background-image: url(https://us.123rf.com/450wm/milkos/milkos1808/milkos180801303/107130436-slices-of-pizza-with-prosciutto-and-spices-on-black-background-copy-space-top-view.jpg?ver=6);
     height: 70vh;
+    margin-top: 5%;
     /* padding-top: 10%; */
 }
 .my-auto{
