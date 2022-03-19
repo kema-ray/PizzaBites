@@ -132,12 +132,13 @@
         </div>
       </div>
     </div>
-    <div class="container-flud order" id="make-order">
+    <div class="container-fluid order" id="make-order">
       <div class="overlay-order">
         <div class="control-top text-center" id="order-now">
           <h2>You can make your order here</h2>
         </div>
         <h2>Make an order for your pizza here and it will be delivered where you are located!</h2>
+        <div class="row">
         <form action="">
           <label for="select">Select size</label>
           <select class="custom select mb-3" id="size" required>
@@ -155,7 +156,15 @@
             <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
             <option value="Hawaiian Pizza">Hawaiian Pizza</option>
           </select>
+          <label for="select">Crust to choose</label>
+          <select name="custom select mb-3" id="name" required>
+            <option value="">Choose your crust</option>
+            <option value="Cheese-Stuffed">Cheese-Stuffed (sh.250)</option>
+            <option value="Crispy">Crispy (sh.180)</option>
+            <option value="Gluten-free">Gluten-free (sh.200)</option>
+          </select>
         </form>
+      </div>
       </div>
 
     </div>
