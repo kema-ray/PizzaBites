@@ -186,6 +186,46 @@
           <div id="details">
             <p>Yor order will be ready and delivered within forty five minutes to one hour</p>
           </div>
+          <div class="choice">
+            <h2>Your order is:</h2>
+            <div id="your-order">
+              <table class="table table-md pizzatable">
+                <tr>
+                  <th>Size</th>
+                  <th>Name</th>
+                  <th>Crust</th>
+                  <th>Toppings</th>
+                  <th>Totals</th>
+                </tr>
+                <tbody id="ordersmade">
+                  <tr>
+                    <td id="pizzasize"></td>
+                    <td id="pizzaname"></td>
+                    <td id="pizzacrust"></td>
+                    <td id="pizzatoppings"></td>
+                    <td id="totals"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p id="pizzatotal"></p>
+              <p id="totalbill"></p>
+              <p id="addedprice">Delivery will cost sh.200</p>
+              <p id="finalmessage"></p>
+            </div>
+            <button class="btn btn-danger addPizza">Add Pizza</button>
+            <button class="btn btn-danger" id="checkout">Checkout</button>
+            <button class="btn btn-danger deliver">Delivery</button>
+          </div>
+          <div class="delivery">
+            <form action="">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Name">
+                <input type="number" id="phone" class="form-control" placeholder="Phone Number">
+                <input type="text" id="location" class="form-control" placeholder="Location">
+                <button class="btn btn-danger" id="final-order">Place Order</button>
+              </div>
+            </form>
+          </div>
       </div>
       </div>
 

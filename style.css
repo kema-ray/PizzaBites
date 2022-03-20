@@ -78,9 +78,21 @@ body {
     padding-left: 7%;
     background-color: rgba(0, 0, 0, 0);
 }
-.choice {
+/* .choice {
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.choice h2 {
+    color: orangered;
+    text-align: left;
+}
+.deliver {
     display: none;
 }
+.delivery {
+
+} */
 
 
 
