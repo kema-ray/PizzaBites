@@ -84,6 +84,60 @@ $(document).ready(function(){
             $("totals").html(total);
 
             // Add pizza button
+            $("button.addPizza").click(function(){
+                let psize = (".size option:selected").val();
+                let pname = (".name option:selected").val();
+                let pcrust = (".#crust option:selected").val();
+                let ptopping = []
+                $.each($("input[name='toppings']:checked"), function(){
+                    ptopping.push($(this).val());
+                });
+                console.log(ptopping.join(", "));
+
+                switch(pcrust) {
+                    case "0":
+                        crust_price = 0;
+                        break;
+                        case "Cheese-stuffed":
+                            crust_price = 250;
+                            break;
+                            case "Crispy":
+                                crust_price = 180;
+                                break;
+                                case "Gluten-free":
+                                    crust_price = 200;
+                                    break;
+                                    default:
+                                        console.log("No price");
+                }
+                switch(psize) {
+                    case "0":
+                        price = 0;
+                        break;
+                        case "small":
+                            price = 700;
+                            console.log(price);
+                            break;
+                            case "medium":
+                                price = 850;
+                                console.log(price);
+                                break;
+                                case "large":
+                                    price = 1000;
+                                    console.log(price);
+                                    break;
+                                    default:
+                                        console.log("fail");
+                }
+                let topping_value = ptopping.length;
+                console.log("toppings value" + topping_value);
+                total = price + crust_price + topping_value;
+                    console.log(total);
+
+                    checkoutTotal = checkoutTotal + total;
+                    console.log(checkoutTotal);
+                
+            })
 
 
 
