@@ -11,7 +11,6 @@ function Getpizza( name,size,crust,topping, total ){
 
 $(document).ready(function(){
   $("button.order").click(function(event){
-   let pname = $(".name option:selected").val();
    let psize = $("#size option:selected").val();
    let pcrust = $("#crust option:selected").val();
    let ptopping = [];
@@ -81,7 +80,6 @@ $(document).ready(function(){
     $("#pizzatopping").html(ptopping.join(", "));
     $("#totals").html(total);
     
-// Add pizza button
     $("button.addPizza").click(function(){
       let pname = $(".name option:selected").val();
       let psize = $("#size option:selected").val();
@@ -132,16 +130,14 @@ $(document).ready(function(){
 
         checkoutTotal = checkoutTotal + total;
         console.log(checkoutTotal);
-      // constractor function
+
       var newOrder = new Getpizza(pname, psize, pcrust,ptopping,total);
 
       $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
       console.log(newOrder);
-      
-      
 
     });
-    // Checkout button
+
     $("button#checkout").click(function(){ 
       $("button#checkout").hide();
       $("button.addPizza").hide();
@@ -151,11 +147,10 @@ $(document).ready(function(){
       $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
     });
 
-    // home delivery button
     $("button.deliver").click(function(){
       $(".pizzatable").hide();
       $(".choise h2").hide();
-      $(".delivery").slideDown(1400);
+      $(".delivery").slideDown(1200);
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
@@ -164,7 +159,6 @@ $(document).ready(function(){
       $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
     });
 
-    // when one clicks place order button
     $("button#final-order").click(function(event){
       event.preventDefault();
 
@@ -174,14 +168,13 @@ $(document).ready(function(){
       let deliveryamount= checkoutTotal+200;
       console.log("Final Bill is: "+deliveryamount);
       let person = $("input#name").val();
-      let phone = $("input#phone").val();
       let location = $("input#location").val();
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
+        $("#finallmessage").append(person+", Hello your request has been received and will be delivered to "+location+ ". Prepare sh. "+deliveryamount);
         $("#totalbill").hide();
-        $("#finallmessage").slideDown(1200);
+        $("#finallmessage").slideDown(1000);
       }
       else {
         alert("Please fill in the details for delivery!");

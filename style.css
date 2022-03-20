@@ -10,8 +10,6 @@ body {
     letter-spacing: 0.1rem;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px, 0;
-    /* background-image: url(https://thumbs.dreamstime.com/b/pizza-seamless-pattern-vector-pizza-pattern-abstract-background-background-useful-restaurant-identity-packaging-89205691.jpg); */
-    /* display: flex; */
 }
 h4,h5{
     color: #374151;
@@ -36,9 +34,6 @@ h4,h5{
     height: 8vh;
     width: 8vw;
 }
-/* #home {
-    padding-top: 10%;
-} */
 .pt-5 {
     background-image: url(https://us.123rf.com/450wm/milkos/milkos1808/milkos180801303/107130436-slices-of-pizza-with-prosciutto-and-spices-on-black-background-copy-space-top-view.jpg?ver=6);
     height: 70vh;
@@ -69,7 +64,6 @@ h4,h5{
     position: relative;
     
     background-position: center;
-    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;

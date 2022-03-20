@@ -7,17 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
-<!-- ]    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-144351462-1');
-    </script> -->
   </head>
   <body>
-    <!-- <section id="main home"> -->
-      <!-- <header> -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
@@ -43,7 +34,6 @@
             </div>
           </div>
         </nav>
-      <!-- </header> -->
       <div id="home" class="pt-5">
         <div class="container" >
           <div class="item">
@@ -147,7 +137,6 @@
         </div>
         <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
         <div class="row">
-            <!-- <div class="col-sm-5"> -->
               <form action="">
                   <label for="select">Select Your Flavor</label>
                   <select class="browser-default custom-select custom-select-md mb-3 name">
@@ -161,14 +150,14 @@
                   </select>
                 <label for="select">Select Size</label>
                 <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                  <option selected value="0">Select size here</option>
+                  <option selected value="">Select size here</option>
                   <option value="large">Large(1000)</option>
                   <option value="medium">Medium(850)</option>
                   <option value="small">Small (700)</option>
                 </select>
                 <label for="crust">Choose your favorite Crust!</label>
                   <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                      <option selected value="0">Select your preferred crust!</option>
+                      <option selected value="">Select your preferred crust!</option>
                     <option value="Crispy">Crispy(sh.250)</option>
                     <option value="Stuffed">Stuffed(sh.180)</option>
                     <option value="Gluten-free">Gluten-free(sh.200)</option>
@@ -179,8 +168,8 @@
                     <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
                   </div>
                   <div class="custom-control custom-checkbox custom-control-inline">
-                    <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
-                    <label class="custom-control-label" for="Sausage">Black Olives</label>
+                    <input type="checkbox" class="custom-control-input" id="olives" value="olives" name="toppings">
+                    <label class="custom-control-label" for="olives">Black Olives</label>
                   </div>
                   <div class="custom-control custom-checkbox custom-control-inline">
                     <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
@@ -195,7 +184,6 @@
                 
               </form>
             </div>
-            <!-- <div class="col-sm-7"> -->
               <div id="information">
                 <p>Your order will be ready and delivered within forty five minutes to one hour</p>
               </div>
@@ -203,15 +191,13 @@
                 <h2>Your Order is:</h2>
                 <div id="your-orders">
                   <table class="table table-sm  pizzatable">
-                    <!-- <thead> -->
                       <tr>
                         <th>Name</th>
-                        <th">Size</th>
+                        <th>Size</th>
                         <th>Crust</th>
                         <th>Topping</th>
                         <th>Total</th>
                       </tr>
-                    <!-- </thead> -->
                     <tbody id="ordersmade">
                       <tr>
                         <td id="pizzaname"></td>
