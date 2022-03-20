@@ -139,7 +139,16 @@ $(document).ready(function(){
                 
                     var newOrder = new Getpizza(psize,pname,pcrust,ptoppings,total);
                     $("#ordersmade").append('<tr><td id "pizzasize">'+newOrder.size + '</td><td id="pizzaname">' + newOrder.name + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatoppings">'+newOrder.toppings+'</td><td id="totals">'+newOrder.total+'</td></tr>');
-                    console.log(newOrder);   
+                    console.log(newOrder);
+                    
+                    $("button#checkout").click(function(){
+                        $("button#checkout").hide();
+                        $("button.addPizza").hide();
+                        $("button.deliver").slideDown();
+                        $("#addedprice").slideDown(1000);
+                        console.log("Your total bill is sh. "+checkoutTotal);
+                        $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+                    });   
             });
 
 
