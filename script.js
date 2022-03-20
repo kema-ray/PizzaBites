@@ -57,6 +57,46 @@ $(document).ready(function(){
                             default:
                                 console.log("fail");
         }
+        let topping_value = ptopping.length;
+        console.log("toppings value" + topping_value);
+
+        if((psize == "0") && (pcrust == "0")){
+            console.log("nothing selected");
+            $("button-order").show();
+            $("#details").show();
+            $("div.choice").hide();
+            alert("Please select pizza size and crust");
+        }
+        else {
+            $("button-order").hide();
+            $("#details").hide();
+            $("div.choice").slideDown(1000);
+        }
+        total = price + crust_price + topping_value;
+        console.log(total);
+        let checkoutTotal =0;
+        checkoutTotal = checkoutTotal + total;
+
+        $("#pizzasize").html($("#size option:selected").val());
+            $("#pizzaname").html($(".name option:selected").val());
+            $("#pizzacrust").html($("#crust option:selected").val());
+            $("#pizzatoppings").html(ptopping.join(", "));
+            $("totals").html(total);
+
+            // Add pizza button
+
+
+
+
+
+
+
+
+
+
+
+
+
         event.preventDefault();
     });
 });
