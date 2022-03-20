@@ -137,7 +137,10 @@ $(document).ready(function(){
                     checkoutTotal = checkoutTotal + total;
                     console.log(checkoutTotal);
                 
-            })
+                    var newOrder = new Getpizza(psize,pname,pcrust,ptoppings,total);
+                    $("#ordersmade").append('<tr><td id "pizzasize">'+newOrder.size + '</td><td id="pizzaname">' + newOrder.name + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatoppings">'+newOrder.toppings+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+                    console.log(newOrder);   
+            });
 
 
 
