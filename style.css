@@ -135,3 +135,24 @@ textarea::placeholder {
 #btn {
     align-items: center;
 }
+@media  screen and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+}
+@media  screen and (max-width: 479px) {
+    body {
+        background-color: #111827;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        background-color: green;
+    }
+}
+@media  screen and (max-width: 1281px) {
+    body {
+        background-color: blue;
+    }
+
+}
