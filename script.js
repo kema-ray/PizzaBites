@@ -154,9 +154,9 @@ $(document).ready(function(){
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
-      let deliceryamount= checkoutTotal+200;
-      console.log("You will pay sh. "+deliceryamount+" on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
+      let deliveryamount= checkoutTotal+200;
+      console.log("You will pay sh. "+deliveryamount+" on delivery");
+      $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
     });
 
     $("button#final-order").click(function(event){
